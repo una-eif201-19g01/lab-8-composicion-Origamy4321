@@ -8,6 +8,24 @@
 
 class Motor {
 
+protected:
+
+    bool estado;
+
+public:
+
+    Motor(bool estado);
+
+    Motor();
+
+    bool isEstado() const;
+
+    void setEstado(bool estado);
+
+    void setEstadoApagado();
+
+    void setEstadoEncendido();
+
 };
 
 

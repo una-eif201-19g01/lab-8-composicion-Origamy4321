@@ -8,6 +8,32 @@
 
 class Ventana {
 
+protected:
+
+    bool polarizada;
+
+    bool estado;
+
+public:
+    Ventana(bool polarizada, bool estado);
+
+    Ventana();
+
+    virtual ~Ventana();
+
+    bool isPolarizada() const;
+
+    void setPolarizada(bool polarizada);
+
+    bool isEstado() const;
+
+    void setEstado(bool estado);
+
+    void abrir();
+
+    void cerrar();
+
+
 };
 
 

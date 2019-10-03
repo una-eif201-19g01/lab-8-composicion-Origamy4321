@@ -8,6 +8,22 @@
 
 class Rueda {
 
+protected:
+
+    float presion;
+
+    void tamaño();
+
+public:
+
+    Rueda(float presion);
+
+    virtual ~Rueda();
+
+    Rueda();
+
+
+
 };
 
 

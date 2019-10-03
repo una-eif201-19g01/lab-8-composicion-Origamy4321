@@ -3,3 +3,18 @@
 //
 
 #include "Rueda.h"
+
+Rueda::Rueda(float presion) : presion(presion) {}
+
+Rueda::~Rueda() {
+
+}
+
+Rueda::Rueda() {}
+
+void Rueda::tamaño() {
+
+
+
+
+}
