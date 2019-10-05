@@ -12,18 +12,16 @@ using namespace std;
 
 class Puerta {
 
-    Ventana ventana1;
+    Ventana *ventana1;
 
     bool estado;
 
 public:
-    Puerta(Ventana ventana1, bool estado);
+    Puerta(Ventana *ventana1, bool estado);
 
     virtual ~Puerta();
 
-    Ventana getVentana1() const;
-
-    void setVentana1(Ventana ventana1);
+    void setVentana1(Ventana *ventana1);
 
     bool isEstado() const;
 
@@ -39,7 +37,9 @@ public:
 
     void cerrarVentana();
 
+    string toString();
 
+    Ventana *getVentana1() const;
 };
 
 

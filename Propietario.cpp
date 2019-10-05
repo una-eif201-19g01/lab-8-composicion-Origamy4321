@@ -4,7 +4,18 @@
 
 #include "Propietario.h"
 
-Propietario::Propietario(const string &nombre) : nombre(nombre) {}
+
+
+string Propietario::toString() {
+
+    string reporte;
+
+    reporte = + "el nombre del dueño del vehiculo es :   " + getNombre() + "\n";
+
+    return reporte;
+}
+
+Propietario::Propietario(const string &nombre, Carro *carro) : nombre(nombre), carro(carro) {}
 
 Propietario::Propietario() {}
 
@@ -20,11 +31,12 @@ void Propietario::setNombre(const string &nombre) {
     Propietario::nombre = nombre;
 }
 
-string Propietario::toString() {
-
-    string reporte;
-
-    reporte = + "el nombre del dueño del vehiculo es :   " + getNombre() + "\n";
-
-    return reporte;
+Carro *Propietario::getCarro() const {
+    return carro;
 }
+
+void Propietario::setCarro(Carro *carro) {
+    Propietario::carro = carro;
+}
+
+

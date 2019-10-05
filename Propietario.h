@@ -4,20 +4,26 @@
 
 #ifndef LAB_7_COMPOSICION_PROPIETARIO_H
 #define LAB_7_COMPOSICION_PROPIETARIO_H
-
+#include "Carro.h"
+#include <vector>
 #include <iostream>
 using namespace std;
 
+class Carro;
+
 class Propietario {
 
-protected:
+public:
 
     string nombre;
+
+    Carro *carro;
 
     string toString();
 
 public:
-    Propietario(const string &nombre);
+
+    Propietario(const string &nombre, Carro *carro);
 
     Propietario();
 
@@ -26,6 +32,10 @@ public:
     const string &getNombre() const;
 
     void setNombre(const string &nombre);
+
+    Carro *getCarro() const;
+
+    void setCarro(Carro *carro);
 
 
 };

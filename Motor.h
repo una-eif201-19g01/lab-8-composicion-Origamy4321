@@ -5,6 +5,8 @@
 #ifndef LAB_7_COMPOSICION_MOTOR_H
 #define LAB_7_COMPOSICION_MOTOR_H
 
+#include <iostream>
+using namespace std;
 
 class Motor {
 
@@ -25,6 +27,8 @@ public:
     void setEstadoApagado();
 
     void setEstadoEncendido();
+
+    string toString();
 
 };
 

@@ -27,3 +27,18 @@ void Motor::setEstadoEncendido() {
     setEstado(true);
 
 }
+
+string Motor::toString() {
+
+    string reporte;
+
+    if(isEstado() ==true) {
+
+        reporte = "el motor esta encendido  ";
+    }else{
+
+        reporte = "el motor esta apagado     ";
+
+    }
+    return reporte;
+}

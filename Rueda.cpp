@@ -12,9 +12,24 @@ Rueda::~Rueda() {
 
 Rueda::Rueda() {}
 
-void Rueda::tamaño() {
+void Rueda::tamano() {
+
+}
+
+float Rueda::getPresion() const {
+    return presion;
+}
+
+void Rueda::setPresion(float presion) {
+    Rueda::presion = presion;
+}
+
+string Rueda::toString() {
+
+    string reporte;
+
+    reporte = "la presión de los neumaticos es de " + to_string(getPresion()) + " psi";
 
 
-
-
+    return reporte;
 }

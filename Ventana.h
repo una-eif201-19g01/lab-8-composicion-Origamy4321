@@ -5,6 +5,9 @@
 #ifndef LAB_7_COMPOSICION_VENTANA_H
 #define LAB_7_COMPOSICION_VENTANA_H
 
+#include <string>
+#include <iostream>
+using namespace std;
 
 class Ventana {
 
@@ -12,10 +15,12 @@ protected:
 
     bool polarizada;
 
+    bool electrica;
+
     bool estado;
 
 public:
-    Ventana(bool polarizada, bool estado);
+    Ventana(bool polarizada, bool estado, bool electrica);
 
     Ventana();
 
@@ -32,6 +37,12 @@ public:
     void abrir();
 
     void cerrar();
+
+    bool isElectrica() const;
+
+    void setElectrica(bool electrica);
+
+    string toString();
 
 
 };

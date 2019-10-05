@@ -5,14 +5,15 @@
 #ifndef LAB_7_COMPOSICION_RUEDA_H
 #define LAB_7_COMPOSICION_RUEDA_H
 
-
+#include <iostream>
+using namespace std;
 class Rueda {
 
 protected:
 
     float presion;
 
-    void tamaño();
+    void tamano();
 
 public:
 
@@ -22,6 +23,11 @@ public:
 
     Rueda();
 
+    float getPresion() const;
+
+    void setPresion(float presion);
+
+    string toString();
 
 
 };

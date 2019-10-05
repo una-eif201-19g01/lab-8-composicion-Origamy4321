@@ -4,7 +4,7 @@
 
 #include "Ventana.h"
 
-Ventana::Ventana(bool polarizada, bool estado) : polarizada(polarizada), estado(estado) {}
+Ventana::Ventana(bool polarizada, bool estado, bool electrica) : polarizada(polarizada), estado(estado), electrica(electrica) {}
 
 Ventana::Ventana() {}
 
@@ -37,4 +37,27 @@ void Ventana::cerrar() {
 
     setEstado(false);
 
+}
+
+bool Ventana::isElectrica() const {
+    return electrica;
+}
+
+void Ventana::setElectrica(bool electrica) {
+    Ventana::electrica = electrica;
+}
+
+string Ventana::toString() {
+
+    string reporte;
+
+    if(isEstado()==true){
+
+        reporte = "La ventana esta abierta ";
+    }
+    else {
+        reporte = "La ventana esta cerrada";
+    }
+
+    return reporte;
 }
